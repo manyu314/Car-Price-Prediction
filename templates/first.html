@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style >
+	body{
+		background-color: hsl(89, 43%, 51%);
+	}
+
+	h1 {
+  color: brown ;
+  text-align: center;
+}
+
+form{
+	text-align:  center;
+}
+
+</style>
+<body>
+
+<h1 style="font-size:55px;"> Welcome to Car Dekho!!!! </h1>
+
+<form action = '/predict' method="POST">
+	<label for = 'km_driven'><b>KM_Driven</b></label><br>
+	<input type='float' id='km_driven' name= 'km_driven' value= ''><br>
+	<br>
+
+
+	<label for = 'seats'><b>Number of Seats:</b></label><br>
+	<select name='seats' id='seats'>
+		<option value='space'> </option>
+		<option value='2'>2</option>
+		<option value='4'>4</option>
+		<option value='5'>5</option>
+		<option value='6'>6</option>
+		<option value='7'>7</option>
+		<option value='8'>8</option>
+		<option value='9'>9</option>
+		<option value='10'>10</option>
+		<option value='14'>14</option>
+	</select><br>
+	<br>
+
+	<label for = 'num_of_year'><b>How old car is:</b></label><br>
+	<input type='float' id='num_of_year' name='num_of_year' value=''><br>
+	<br>
+
+	<label for = 'Mileage'><b>Mileage of the car(kmpl/kmkg):</b></label><br>
+	<input type='float' id='mileage' name='mileage' value=''><br>
+	<br>
+
+
+	<label for = 'engine'><b>Engine of the car(CC):</b></label><br>
+	<input type='float' id='engine' name='engine' value=''><br>
+	<br>
+
+
+	<label for = 'max_power'><b>Max_power of the car(bhp):</b></label><br>
+	<input type='float' id='max_power' name='max_power' value=''><br>
+	<br>
+
+
+	<label for = 'fuel'><b>Fuel:</b></label><br>
+	<select name='fuel' id='fuel'>
+		<option value='space'> </option>
+		<option value='Petrol'>Petrol</option>
+		<option value='Diesel'>Diesel</option>
+		<option value='CNG'>CNG</option>
+		<option value='LPG'>LPG</option>
+	</select><br>
+	<br>
+
+
+	<label for = 'seller_type'><b>Type of Seller:</b></label><br>
+	<select name='seller_type' id='seller_type'>
+		<option value='space'> </option>
+		<option value='Individual'>Individual</option>
+		<option value='Dealer'>Dealer</option>
+		<option value='Trustmark Dealer'>Trustmark Dealer</option>
+	</select><br>
+	<br>
+
+
+
+	<label for = 'transmission'><b>Transmission:<b></label><br>
+	<select name='transmission' id='transmissions'>
+		<option value='space'> </option>
+		<option value='Manual'>Manual</option>
+		<option value='Automatic'>Automatic</option>
+	</select><br>
+	<br>
+
+
+	<label for = 'owner'><b>Owner:<b></label><br>
+	<select name='owner' id='owner'>
+		<option value='space'> </option>
+		<option value='First Owner'>First Owner</option>
+		<option value='Second Owner'>Second Owner</option>
+		<option value='Third Owner'>Third Owner</option>
+		<option value='Fourth & Above Owner'>Fourth & Above Owner</option>
+		<option value='Test Drive Car'>Test Drive Car</option>		
+	</select><br>
+	<br>
+
+	<input type='submit' value='Submit'>
+
+</form>
+</body>
+</html>
