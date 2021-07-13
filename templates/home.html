@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<div class='container'>
+<div class="p-3 mb-2 bg-light text-dark">
+<h1 style="font-size:55px;" class="text-secondary text-center"> Welcome to Car Dekho </h1>
+<br>
+<p><b>Enter the below details:</b></p>
+<form action = '/predict' method="POST">
+	<div class="mb-3">
+	<label for = 'km_driven' class="form-label"><b>Distance Travlled:</b></label><br>
+	<input type='float' class="form-control" id='km_driven' name= 'km_driven' value= ''>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'seats' class="form-label"><b>Number of Seats in the car:</b></label><br>
+	<select name='seats' id='seats'>
+		<option value='2'>2</option>
+		<option value='4'>4</option>
+		<option value='5'>5</option>
+		<option value='6'>6</option>
+		<option value='7'>7</option>
+		<option value='8'>8</option>
+		<option value='9'>9</option>
+		<option value='10'>10</option>
+		<option value='14'>14</option>
+	</select>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'num_of_year' class="form-label"><b>How old your car is:</b></label><br>
+	<input type='float' class="form-control" id='num_of_year' name='num_of_year' value=''>
+	</div>	
+
+	<div class="mb-3">
+	<label for = 'Mileage' class="form-label"><b>Mileage of the car(kmpl):</b></label><br>
+	<input type='float' class="form-control" id='mileage' name='mileage' value=''>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'engine' class="form-label"><b>Engine of the car(CC):</b></label><br>
+	<input type='float' class="form-control" id='engine' name='engine' value=''>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'max_power' class="form-label"><b>Max_power of the car(bhp):</b></label><br>
+	<input type='float' class="form-control" id='max_power' name='max_power' value=''>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'fuel' class="form-label"><b>Fuel:</b></label><br>
+	<select name='fuel' id='fuel'>
+		<option value='Petrol'>Petrol</option>
+		<option value='Diesel'>Diesel</option>
+		<option value='CNG'>CNG</option>
+		<option value='LPG'>LPG</option>
+	</select>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'seller_type' class="form-label"><b>Type of Seller:</b></label><br>
+	<select name='seller_type' id='seller_type'>
+		<option value='Individual'>Individual</option>
+		<option value='Dealer'>Dealer</option>
+		<option value='Trustmark Dealer'>Trustmark Dealer</option>
+	</select>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'transmission' class="form-label"><b>Transmission:</b></label><br>
+	<select name='transmission' id='transmissions'>
+		<option value='Manual'>Manual</option>
+		<option value='Automatic'>Automatic</option>
+	</select>
+	</div>
+
+	<div class="mb-3">
+	<label for = 'owner' class="form-label"><b>Owner:</b></label><br>
+	<select name='owner' id='owner'>
+		<option value='First Owner'>First Owner</option>
+		<option value='Second Owner'>Second Owner</option>
+		<option value='Third Owner'>Third Owner</option>
+		<option value='Fourth & Above Owner'>Fourth & Above Owner</option>
+		<option value='Test Drive Car'>Test Drive Car</option>		
+	</select>
+	</div>
+
+	<input type='submit' class="btn btn-primary" value='Submit'>
+
+</form>
+</div>
+</div
+
+{% endblock %}
